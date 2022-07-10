@@ -78,4 +78,20 @@ void main() {
   print(a < b);
   print(a >= b);
   print(a <= b);
+
+  //conditional
+  print("Conditional");
+  var nilai;
+  nilai = 80;
+
+  if (nilai >= 80) {
+    print("A");
+  } else if (nilai <= 80 && nilai >= 50) {
+    print("B");
+  } else {
+    print("Tidak lulus");
+  }
+
+  print("-----------");
+  nilai >= 80 ? print("A") : print("Tidak A");
 }
