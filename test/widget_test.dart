@@ -106,6 +106,27 @@ void main() {
   const String mahasiswa2 = "Di'ah";
   
   print(mahasiswa2);
+
+  //null safety
+  //? ! late
+  
+  //tanda tanya digunakan dia boleh null.
+  String? prodi;
+  
+  print(prodi);
+  
+  //tanda seru memaksa dijalankan / yakin pasti ada datanya.
+  String? matakuliah;
+  matakuliah = "Mobile Programming";
+  
+  print(matakuliah.length);
+  
+  //late seperti final const
+  late String jurusanns;
+  jurusanns = "Teknik Informatika";
+  jurusanns = "TI";
+  
+  print(jurusanns.length);
 }
 
 //function
