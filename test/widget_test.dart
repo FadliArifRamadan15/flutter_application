@@ -1,4 +1,44 @@
+//oop
+//class
+// class parent
+class Kendaraan {
+  String? merk;
+  String? nama;
+  int? harga;
+  
+  //construktor
+  Kendaraan ({this.merk, this.nama, this.harga});
+  
+  //method
+  maju(int kecepatan) {
+    print(kecepatan.toString() + " KM/Jam");
+  }
+}
+
+//inheritance / pewarisan
+class Sedan extends Kendaraan {
+  int? jumlahPintu;
+  int? kecepatanMaksimal;
+  
+  Sedan({String? merk, this.jumlahPintu, this.kecepatanMaksimal}): super(merk : merk);
+}
+
 void main() {
+  //instansiasi
+  var k1 = Kendaraan(merk: "sedan", nama: "civic", harga: 20);
+  
+  (k1.maju(40));
+  print(k1.merk);
+  print(k1.nama);
+  print(k1.harga);
+  
+  var s1 = Sedan(jumlahPintu: 4, kecepatanMaksimal: 120, merk: "Honda");
+  print("--------");
+  print(s1.jumlahPintu);
+  print(s1.kecepatanMaksimal);
+  print(s1.merk);
+
+
   //tipe data dan variable
   //var
   var mahasiswa = "jejen";
